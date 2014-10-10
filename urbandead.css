@@ -1,0 +1,23 @@
+/* CSS declarations go here */
+.MiniMap{
+    width: 300px;
+    height: 300px;
+    float: left;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+.MiniMapTile{
+    width: 98px;
+    height: 98px;
+    float: left;
+    border: 1px solid blue;
+}
+
+.CharData{
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: 1px solid green;
+    overflow: hidden;
+}

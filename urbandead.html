@@ -1,0 +1,34 @@
+<head>
+  <title>urbandead</title>
+</head>
+
+<body>
+  {{> miniMap}}
+  {{> charData}}
+</body>
+
+<template name="miniMap">
+    <div class="MiniMap">
+        {{#each locations.surroundingLocations}}
+            {{> minimapTile}}
+        {{/each}}
+    </div>
+</template>
+
+<template name="minimapTile">
+    <div class="MiniMapTile">
+        {{locInf.name}} ({{locInf.x}},{{locInf.y}})
+        <br/>
+        {{#each chars}}
+            <span>{{charName}}</span><br/>
+        {{/each}}
+    </div>
+</template>
+
+<template name="charData">
+    <div class="CharData">
+
+        {{character.charName}} ({{character.x}},{{character.y}})
+
+    </div>
+</template>
